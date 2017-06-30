@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <com.github.ybq.parallaxviewpager.ParallaxViewPager
+        android:id="@+id/parallax_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        pv:mode="right_overlay"
+        pv:outset="62%"
+        pv:shadow_width="30dp"></com.github.ybq.parallaxviewpager.ParallaxViewPager>
+</LinearLayout>

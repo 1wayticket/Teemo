@@ -199,7 +199,6 @@ public class JCVideoPlayerStandard extends JCVideoPlayer {
         }
     }
 
-
     @Override
     public void showWifiDialog() {
         super.showWifiDialog();

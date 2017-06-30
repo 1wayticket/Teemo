@@ -23,9 +23,36 @@ public class SplahActivity extends BaseActivity {
     }
 
     @Override
-    protected void onPostResume() {
-        super.onPostResume();
-        SystemClock.sleep(3000);
-        startActivity(new Intent(this,MainActivity.class));
+    protected void onResume() {
+        super.onResume();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(3000);
+                    delayToFinish();
+                    startActivity(new Intent(SplahActivity.this,MainActivity.class));
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                    startActivity(new Intent(SplahActivity.this,MainActivity.class));
+                    delayToFinish();
+                }
+
+            }
+        }).start();
+
+    }
+    public void delayToFinish(){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(1000);
+                    SplahActivity.this.finish();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
     }
 }

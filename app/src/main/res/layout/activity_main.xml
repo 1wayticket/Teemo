@@ -1,13 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="top.teemo.MainActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="top.teemo.MainActivity"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"/>
+    <RadioGroup
+        android:id="@+id/index"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/index_zero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="首页"
+            android:drawableTop="@drawable/first_page_selector"
+            style="@drawable/nav_btn_selector"
+            android:button="@null"
+            android:checked="false"
+            android:textSize="10sp"
+            android:textColor="@drawable/nav_btn_selector"
+            android:gravity="center" />
+        <RadioButton
+            android:id="@+id/index_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="二页"
+            android:drawableTop="@drawable/first_page_selector"
+            style="@drawable/nav_btn_selector"
+            android:button="@null"
+            android:checked="false"
+            android:textSize="10sp"
+            android:textColor="@drawable/nav_btn_selector"
+            android:gravity="center" />
+        <RadioButton
+            android:id="@+id/index_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="三页"
+            android:drawableTop="@drawable/first_page_selector"
+            style="@drawable/nav_btn_selector"
+            android:button="@null"
+            android:checked="false"
+            android:textSize="10sp"
+            android:textColor="@drawable/nav_btn_selector"
+            android:gravity="center" />
+        <RadioButton
+            android:id="@+id/index_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="四页"
+            android:drawableTop="@drawable/first_page_selector"
+            style="@drawable/nav_btn_selector"
+            android:button="@null"
+            android:checked="false"
+            android:textSize="10sp"
+            android:textColor="@drawable/nav_btn_selector"
+            android:gravity="center" />
+    </RadioGroup>
 
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:text="Hello World!" app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

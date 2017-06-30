@@ -1,11 +1,36 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="styleLoadingLayout">@style/LoadingLayout</item>
+    </style>
+    <style name="LoadingLayoutStyle" parent="LoadingLayout.Style">
+        <item name="llEmptyImage">@drawable/empty</item>
+        <item name="llErrorImage">@drawable/error</item>
+    </style>
+    <style name="TeemoTheme" parent="AppTheme" >
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/activity_anim_style</item>
+    </style>
+    <style name="VideoTheme" parent="AppTheme" >
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/video_anim_style</item>
+    </style>
+    <style name="video_anim_style">
+        <item name="android:windowEnterAnimation">@anim/activity_theme_in</item>
+        <item name="android:windowExitAnimation">@anim/activity_theme_out</item>
+    </style>
+    <style name="activity_anim_style">
+        <item name="android:windowEnterAnimation">@anim/activity_theme_in</item>
+        <item name="android:windowExitAnimation">@anim/activity_theme_out</item>
     </style>
 
 </resources>

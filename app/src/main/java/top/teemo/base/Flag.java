@@ -5,4 +5,5 @@ package top.teemo.base;
  */
 
 public class Flag {
+    public static final int KAIYAN_URL=1;
 }
