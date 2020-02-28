@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_shape_start</item>
+        <item name="colorPrimaryDark">@color/color_shape_start</item>
+        <item name="colorAccent">@color/color_shape_end</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:listDivider">@drawable/list_divider</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--隐藏标题栏-->
+         <!--<item name="android:windowFullscreen">true</item>-->
+    </style>
+    <style name="TabLayoutTextStyle">
+    <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="menu_labels_style">
+        <item name="android:textColor">@color/colorTheme</item>
+    </style>
+
+    <style name="dialog_animal"
+        parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!--闪屏-->
+    <style name="ThemeSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>
