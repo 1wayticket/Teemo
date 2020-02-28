@@ -371,26 +371,26 @@ public class MainActivity extends BaseActivity {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
                 switch (item.getItemId()) {
-                    case R.id.side_bar1:
-                        Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
-                        intent.putExtra("URL", "https://github.com/wapchief");
-                        startActivity(intent);
-                        break;
-                    case R.id.side_bar2:
-                        Intent intent1 = new Intent(MainActivity.this, WebViewActivity.class);
-                        intent1.putExtra("URL", "http://blog.csdn.net/wapchief");
-                        startActivity(intent1);
-                        break;
-                    case R.id.side_bar3:
-                        Intent intent2 = new Intent(MainActivity.this, WebViewActivity.class);
-                        intent2.putExtra("URL", "http://www.jianshu.com/users/9f0bedd0835c");
-                        startActivity(intent2);
-                        break;
-                    case R.id.side_bar4:
-                        Intent intent3 = new Intent(MainActivity.this, WebViewActivity.class);
-                        intent3.putExtra("URL", "http://wapchief.github.io");
-                        startActivity(intent3);
-                        break;
+//                    case R.id.side_bar1:
+//                        Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+//                        intent.putExtra("URL", "https://github.com/wapchief");
+//                        startActivity(intent);
+//                        break;
+//                    case R.id.side_bar2:
+//                        Intent intent1 = new Intent(MainActivity.this, WebViewActivity.class);
+//                        intent1.putExtra("URL", "http://blog.csdn.net/wapchief");
+//                        startActivity(intent1);
+//                        break;
+//                    case R.id.side_bar3:
+//                        Intent intent2 = new Intent(MainActivity.this, WebViewActivity.class);
+//                        intent2.putExtra("URL", "http://www.jianshu.com/users/9f0bedd0835c");
+//                        startActivity(intent2);
+//                        break;
+//                    case R.id.side_bar4:
+//                        Intent intent3 = new Intent(MainActivity.this, WebViewActivity.class);
+//                        intent3.putExtra("URL", "http://wapchief.github.io");
+//                        startActivity(intent3);
+//                        break;
                     case R.id.side_bar5:
                         Intent intent4 = new Intent(MainActivity.this, SettingActivity.class);
                         startActivity(intent4);
